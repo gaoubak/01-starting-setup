@@ -3,10 +3,11 @@ import React from "react";
 
 import Expense from "./components/Expenses/Expense";
 import NewExpense from "./components/NewExpense/NewExpenses";
+import ExpensesFilter from "./components/Expenses/ExpensesFilter";
 
 function App() {
   const expenses = [
-    
+    <ExpensesFilter/>,
     {
       id: "e1",
       title: "Toilet Paper",
