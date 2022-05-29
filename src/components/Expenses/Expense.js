@@ -1,9 +1,12 @@
 import "./Expense.css"
 import Card from "../UI/Card";
 import ExpenseItem from "./ExpenseItem"
+import ExpensesFilter from "./ExpensesFilter";
 
 function Expense(props){
     return (
+        <div>
+            <ExpensesFilter />
         <Card className="expenses">
             <ExpenseItem
                 title={props.items[0].title}
@@ -27,6 +30,7 @@ function Expense(props){
             ></ExpenseItem>
     
         </Card>
+        </div>
     )
 
     }
